@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+body {
+  line-height: 1;
+  
+}
+ol,ul {
+  list-style: none;
+}
+a:link {
+  text-decoration: none;
+}
+blockquote,q {
+  quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+    font-family: "微軟正黑體";
+}
+//共用
+html {
+    min-width: 1080px;
+    height: 100%;
+    box-sizing: border-box;
+    background: white;
+    font-family: "微軟正黑體";
+    .bg {
+        min-width: 1080px;
+        height: 2000px;
+        background: url('../images/bg.jpg') no-repeat top center;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        z-index: -999;
+    }
+}
+//header
+header {
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(to bottom,#1dd8de,#0098be);
+    //包覆
+    article {
+        width: 90%;
+        height: 100%;
+        margin: 0px auto;
+        //漢堡選單
+        .topic {
+            width: 80px;
+            height: 76px;
+            margin-top: 40px;
+            float: left;
+            background: url('../images/topic.png');
+            outline: none;
+            border: none;
+            &:active {
+                transform: scale(1.1);
+            }
+        }
+        //登入/註冊按鈕
+        div {
+            margin-top: 30px;
+            float: right;
+            button {
+                width: 160px;
+                height: 100px;
+                outline: none;
+                border-radius: 20px;
+                font-size: 48px;
+                &:first-child {
+                    margin-right: 20px;
+                    border: solid 5px #ffa800;
+                    background: linear-gradient(to top,#fff629,#efb527 50%,#fff629 50%),radial-gradient(ellipse,#fae59e,transparent);
+                }
+                &:last-child {
+                    color: white;
+                    border: solid 5px #fc5f00;
+                    background: linear-gradient(to top,#ff7a29,#fc5f00 50%,#ff7a29 50%),radial-gradient(ellipse,#ff9f44,transparent);
+                }
+            }
+        }
+    }
+    //跑馬燈
+    marquee {
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(to top,#c7c7c7 5%,#f8f8f8 15%,#f8f8f8 82%,#ffffff 90%,#b4b4b4);
+        font-size: 48px;
+        line-height: 110px;
+    }
+}
+//main
+main {
+    width: 100%;
+    height: 1780px;
+    padding-top: 120px;
+    //圖片輪播
+    .single-item {
+        width: 100%;
+        height: 420px;
+        margin-bottom: 0px!important;
+        //圖片
+        .banner1 {
+            width: 100%;
+            height: 420px;
+            background: url('../images/banner.png') no-repeat top center;
+            position: relative;
+        }
+        a {
+            outline: none;
+        }
+        //左右箭頭
+        .slick-prev:before,.slick-next:before {
+            font-family: none;
+            content: "";
+        }
+        .slick-next,.slick-prev {
+            width: 40px;
+            height: 60px;
+            border-radius: 5px;
+            z-index: 3;
+        }
+        .slick-next:hover,.slick-prev:active{
+            background: rgba( 0, 0 , 0, 0.4);
+            }
+        .slick-next {
+            right: 40px;
+        }
+        .slick-prev {
+            left: 40px;
+        }      
+        //點點
+        .slick-dots {
+            bottom:30px
+        }
+        .slick-dots li {
+            margin: 0px 30px;
+        }
+        .slick-dots li button:before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: black;
+            opacity: 1;
+            border-radius: 10px;
+        }
+        .slick-dots li.slick-active button:before {
+            width: 45px;
+            height: 45px;
+            opacity: 1;
+            left: -12.5px;
+            top: -12.5px;
+            background: url('../images/page.png');
+        }
+    }
+    //左右箭頭底圖
+    .leftarrow,.rightarrow {
+        width: 40px;
+        height: 60px;
+        background: rgba( 183, 184 , 184, 0.5);
+        position: absolute;
+        border-radius: 5px;
+        top: 460px;
+        z-index: 2;
+        &::before {
+            content: "";
+            width: 19px;
+            height: 31px;
+            position: absolute;
+            background: url('../images/arrow.png');
+            margin: 15px 0px 0px 10px;
+        }
+    }
+    .leftarrow {
+        left: 40px;
+    }
+    .rightarrow {
+        right: 40px;
+        &::before {
+            transform: scaleX(-1);
+        }
+    }
+    .list {
+        width: 100%;
+        height: 545px;
+        background: white;
+        .listbut {
+            width: 900px;
+            height: 100px;
+            background: linear-gradient(to top,#c8c8c8,#f8f8f8 74%);
+            margin: 0px auto;
+            transform: translateY(30%);
+            border-radius: 20px;
+            overflow: hidden;
+            border: solid 3px #dbdbdb;
+            li {
+                width: 150px;
+                height: 100px;
+                float: left;
+                text-align: center;
+                line-height: 100px;
+                font-size: 32px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 4px;
+                    height: 80px;
+                    background: linear-gradient(to top,#c8c8c8 9%,#bbbbbb 50%,#f8f8f8 92%);
+                    right: 0px;
+                    top: 5px;
+                }
+                &:last-child:before {
+                    display: none;
+                }
+                // &:nth-child(1),&:nth-child(2),&:nth-child(4),&:nth-child(6) {
+                //     letter-spacing: 10px;
+                // }
+            }
+        }
+        .sport {
+            display: none;
+            width: 900px;
+            height: 300px;
+            margin: 0px auto;
+            transform: translateY(30%);
+            div {
+                width: 270px;
+                height: 220px;
+                box-shadow: 0px 0px 15px gray;
+                float: left;
+                background-size: cover;
+                margin-right: 50px;
+            }
+            .sp1 {
+                background: url('../images/spimg_1.png') no-repeat top center;
+                background-size: cover;
+            }
+            .sp2 {
+                background: url('../images/spimg_2.png');
+                background-size: cover;
+            }
+        }
+    }
+}
+.visited1 .but1,.visited2 .but2,.visited3 .but3,.visited4 .but4,.visited5 .but5,.visited6 .but6 {
+    background: linear-gradient(to top,#1dd8de,#019abf 74%);
+    color: white;
+}
+.visited1 .listbut .but1:before,.visited2 .listbut .but2:before,.visited3 .listbut .but3:before,,.visited4 .listbut .but4:before,.visited5 .listbut .but5:before,.visited6 .listbut .but6:before {
+    right: -4px;
+}
+.visited1 .list .sport{
+    display: block;
+}
