@@ -614,6 +614,10 @@ main {
       float: left;
       margin-right: 30px;
       text-align: center; }
+      main .list div:active {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
     main .list p {
       font-size: 40px;
       margin-top: 240px; }
@@ -715,6 +719,10 @@ main {
       float: left;
       margin-right: 30px;
       text-align: center; }
+      main .help div:active {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
     main .help p {
       font-size: 50px;
       color: white;
