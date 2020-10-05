@@ -49,12 +49,21 @@ html {
     font-family: "微軟正黑體";
     .bg {
         width: 100%;
-        height: 100%;
+        height: 2100px;
         background: url('../images/bg.jpg') no-repeat top center;
         background-size: cover;
         position: absolute;
         top: 0px;
         z-index: -999;
+    }
+    .blackbg {
+        display: none;
+        width: 100%;
+        height: 2210px;
+        background: rgba( 0, 0 , 0, 0.8);
+        position: absolute;
+        top: 0;
+        z-index: 3;
     }
 }
 //header
@@ -110,6 +119,384 @@ header {
         background: linear-gradient(to top,#c7c7c7 5%,#f8f8f8 15%,#f8f8f8 82%,#ffffff 90%,#b4b4b4);
         font-size: 48px;
         line-height: 110px;
+    }
+}
+//containter
+.containter {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    .signup {
+        display: none;
+        width: 900px;
+        height: 1500px;
+        margin: 0px auto;
+        .uptitle {
+            width: 100%;
+            height: 90px;
+            ul {
+                li {
+                    width: 430px;
+                    height: 95px;
+                    position: absolute;
+                    text-align: center;
+                    font-size: 60px;
+                    line-height: 95px;
+                    color: #673920;
+                }
+                .upli1 {
+                    background: url('../images/loginbut.png');
+                    background-size: cover;
+                }
+                .upli2 {
+                    background: url('../images/whitebut.png');
+                    background-size: cover;
+                    left: 350px;
+                }
+            }
+            button {
+                width: 80px;
+                height: 80px;
+                border-radius: 50px;
+                position: absolute;
+                right: 0px;
+                background: linear-gradient(to top,#d2d2d2,#ffffff);
+                outline: none;
+                border: none;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    background: url('../images/loginic_1.png') no-repeat center;
+                    background-size: cover;
+                    top: 20px;
+                    left: 20px;
+                }
+            }
+        }
+        .upcontent {
+            width: 900px;
+            height: 1305px;
+            background: white;
+            border-radius: 0px 50px 50px 50px;
+            padding-top: 100px;
+            input {
+                display: block;
+                width: 700px;
+                height: 100px;
+                background: #dcdcdc;
+                border-radius: 20px;
+                margin: 0px auto 40px;
+                outline: none;
+                border: none;
+                font-size: 50px;
+                padding: 10px 0px 10px 30px;
+                font-weight: bold;
+            }
+            .passwordbut {
+                width: 60px;
+                height: 55px;
+                background: url('../images/singupic.png');
+                outline: none;
+                border: none;
+                position: absolute;
+                right: 120px;
+                top: 380px;
+            }
+            .cellphonebut {
+                width: 250px;
+                height: 80px;
+                position: absolute;
+                right: 110px;
+                top: 690px;
+                border-radius: 20px;
+                outline: none;
+                border: none;
+                background: #00b9dc;
+                color: white;
+                font-size: 40px;
+                &:active {
+                    transform: scale(1.1);
+                }
+            }
+            .check {
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin: 0px 20px 0px 100px;
+                &:active {
+                    transform: scale(1.1);
+                }
+            }
+            p {
+                font-size: 36px;
+                line-height: 50px;
+                margin-bottom: 80px;
+                a {
+                    margin-left: 10px;
+                    color: #00b7d8;
+                }
+            }
+            .ok {
+                display: block;
+                width: 700px;
+                height: 120px;
+                margin: 0px auto;
+                font-size: 60px;
+                color: white;
+                background: linear-gradient(to right,#1dd8de,#0098be);
+                border-radius: 20px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .login {
+        display: none;
+        width: 900px;
+        height: 900px;
+        margin-top: 250px;
+        .intitle {
+            width: 100%;
+            height: 90px;
+            ul {
+                li {
+                    width: 430px;
+                    height: 95px;
+                    position: absolute;
+                    text-align: center;
+                    font-size: 60px;
+                    line-height: 95px;
+                    color: #673920;
+                }
+                .inli1 {
+                    background: url('../images/whitebut.png');
+                    background-size: cover;
+                    z-index: 2;
+                }
+                .inli2 {
+                    background: url('../images/signupbut.png');
+                    background-size: cover;
+                    left: 350px;
+                    color: white;
+                }
+            }
+            button {
+                width: 80px;
+                height: 80px;
+                border-radius: 50px;
+                position: absolute;
+                right: 0px;
+                background: linear-gradient(to top,#d2d2d2,#ffffff);
+                outline: none;
+                border: none;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    background: url('../images/loginic_1.png') no-repeat center;
+                    background-size: cover;
+                    top: 20px;
+                    left: 20px;
+                }
+            }
+        }
+        .incontent {
+            width: 900px;
+            height: 610px;
+            background: white;
+            position: relative;
+            z-index: 5;
+            border-radius: 0px 50px 50px 50px;
+            padding-top: 100px;
+            input {
+                display: block;
+                width: 600px;
+                height: 90px;
+                background: #dcdcdc;
+                border-radius: 20px;
+                margin: 0px auto 40px;
+                outline: none;
+                border: none;
+                font-size: 50px;
+                padding: 10px 0px 10px 150px;
+                font-weight: bold;
+            }
+            .accountbg {
+                width: 110px;
+                height: 110px;
+                background: linear-gradient(to bottom,#1dd8de,#0098be);
+                border-radius: 20px 0px 0px 20px;
+                position: absolute;
+                top: 100px;
+                left: 75px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 56px;
+                    background: url('../images/loginic_2.png');
+                    top: 27px;
+                    left: 30px;
+                }
+            }
+            .passwordbg {
+                width: 110px;
+                height: 110px;
+                background: linear-gradient(to bottom,#1dd8de,#0098be);
+                border-radius: 20px 0px 0px 20px;
+                position: absolute;
+                top: 250px;
+                left: 75px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 63px;
+                    background: url('../images/loginic_3.png');
+                    top: 23.5px;
+                    left: 30px;
+                }
+            }
+            .remember {
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin: 0px 20px 0px 75px;
+                &:active {
+                    transform: scale(1.1);
+                }
+            }
+            p {
+                font-size: 36px;
+                line-height: 50px;
+                float: left;
+                margin-bottom: 80px;
+            }
+            a {
+                float: right;
+                line-height: 50px;
+                font-size: 36px;
+                color: black;
+                margin-right: 75px;
+            }
+            .ok {
+                display: block;
+                width: 700px;
+                height: 120px;
+                margin: 0px auto;
+                font-size: 60px;
+                color: white;
+                background: linear-gradient(to right,#1dd8de,#0098be);
+                border-radius: 20px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}
+//nav
+nav {
+    width: 800px;
+    height: 2210px;
+    background: linear-gradient(to right,#ffffff 97%,#b4b4b4);
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    transition: 0.5s all;
+    transform: translateX(-100%);
+    .navic {
+        width: 65px;
+        height: 65px;
+        background: url('../images/navic.png');
+        outline: none;
+        border: none;
+        float: right;
+        margin: 50px 100px 0px 0px;
+        &:active {
+            transform: scale(1.1);
+        }
+    }
+    .lang {
+        width: 450px;
+        height: 200px;
+        margin: 100px 0px 0px 80px;
+        p {
+            font-size: 60px;
+        }
+        ul {
+            width: 450px;
+            height: 100px;
+            background: linear-gradient(to top,#c8c8c8,#f8f8f8 74%);
+            border-radius: 20px;
+            margin-top: 30px;
+            border: solid 3px #dcdcdc;
+            overflow: hidden;
+            li {
+                float: left;
+                font-size: 40px;
+                text-align: center;
+                width: 150px;
+                height: 100px;
+                line-height: 100px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 4px;
+                    height: 80px;
+                    background: linear-gradient(to top,#c8c8c8 9%,#bbbbbb 50%,#f8f8f8 92%);
+                    right: 0px;
+                    top: 5px;
+                }
+                &:last-child:before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .navlist {
+        width: 100%;
+        height: 1450px;
+        margin-top: 50px;
+        overflow: hidden;
+        li {
+            width: 87%;
+            height: 200px;
+            padding-left: 80px;
+            font-size: 60px;
+            line-height: 200px;
+            border-style: solid;
+            border-color: #eaeaea;
+            border-width: 2px 0px 2px 0px;
+            &:active {
+                background: rgba( 0, 0 , 0, 0.3);
+            }
+        }
+        .navli1 {
+            border-top-width: 4px;
+        }
+        .navli7 {
+            border-bottom-width: 4px;
+        }
+    }
+    .logout {
+        width: 240px;
+        height: 100px;
+        margin: 50px 0px 0px 80px;
+        outline: none;
+        border: solid 2px #2ed7e2;
+        background: linear-gradient(to bottom,#32dde3,#0da1de 74%);
+        border-radius: 20px;
+        font-size: 50px;
+        color: white;
+        &:active {
+            transform: scale(1.1);
+        }
     }
 }
 //main
@@ -203,12 +590,15 @@ main {
             transform: scaleX(-1);
         }
     }
+    //下清單
     .list {
         width: 100%;
         height: 545px;
         background: white;
+        box-shadow: 0px 5px 15px gray;
+        //清單按鈕
         .listbut {
-            width: 900px;
+            width: 915px;
             height: 100px;
             background: linear-gradient(to top,#c8c8c8,#f8f8f8 74%);
             margin: 0px auto;
@@ -217,7 +607,7 @@ main {
             overflow: hidden;
             border: solid 3px #dbdbdb;
             li {
-                width: 150px;
+                width: 152.5px;
                 height: 100px;
                 float: left;
                 text-align: center;
@@ -236,25 +626,29 @@ main {
                 &:last-child:before {
                     display: none;
                 }
-                // &:nth-child(1),&:nth-child(2),&:nth-child(4),&:nth-child(6) {
-                //     letter-spacing: 10px;
-                // }
             }
         }
-        .sport {
+        //清單內容
+        article {
             display: none;
-            width: 900px;
+            width: 915px;
             height: 300px;
             margin: 0px auto;
             transform: translateY(30%);
-            div {
-                width: 270px;
-                height: 220px;
-                box-shadow: 0px 0px 15px gray;
-                float: left;
-                background-size: cover;
-                margin-right: 50px;
-            }
+        }
+        div {
+            width: 285px;
+            height: 230px;
+            box-shadow: 0px 0px 15px gray;
+            float: left;
+            margin-right: 30px;
+            text-align: center;
+        }
+        p {
+            font-size: 40px;
+            margin-top: 240px;
+        }
+        .sport {
             .sp1 {
                 background: url('../images/spimg_1.png') no-repeat top center;
                 background-size: cover;
@@ -264,8 +658,175 @@ main {
                 background-size: cover;
             }
         }
+        .live {
+            height: 600px;
+            .li1 {
+                background: url('../images/liimg_1.png');
+                background-size: cover;
+            }
+            .li2 {
+                background: url('../images/liimg_2.png');
+                background-size: cover;
+            }
+            .li3 {
+                background: url('../images/liimg_3.png');
+                background-size: cover;
+                margin: 0px 0px 100px 0px;
+            }
+            .li4 {
+                background: url('../images/liimg_4.png');
+                background-size: cover;
+            }
+            .li5 {
+                background: url('../images/liimg_5.png');
+                background-size: cover;
+            }
+            .li6 {
+                background: url('../images/liimg_6.png');
+                background-size: cover;
+                margin: 0px;
+            }
+        }
+        .slot {
+            height: 600px;
+            .sl1 {
+                background: url('../images/slimg_1.png');
+                background-size: cover;
+            }
+            .sl2 {
+                background: url('../images/slimg_2.png');
+                background-size: cover;
+            }
+            .sl3 {
+                background: url('../images/slimg_3.png');
+                background-size: cover;
+                margin: 0px 0px 100px 0px;
+            }
+            .sl4 {
+                background: url('../images/slimg_4.png');
+                background-size: cover;
+            }
+            .sl5 {
+                background: url('../images/slimg_5.png');
+                background-size: cover;
+            }
+            .sl6 {
+                background: url('../images/slimg_6.png');
+                background-size: cover;
+                margin: 0px;
+            }
+        }
+        .lotto {
+            .lo1 {
+                background: url('../images/loimg_1.png');
+                background-size: cover;
+            }
+            .lo2 {
+                background: url('../images/loimg_2.png');
+                background-size: cover;
+            }
+            .lo3 {
+                background: url('../images/loimg_3.png');
+                background-size: cover;
+                margin: 0px;
+            }
+        }
+        .fish {
+            height: 600px;
+            .fi1 {
+                background: url('../images/fiimg_1.png');
+                background-size: cover;
+            }
+            .fi2 {
+                background: url('../images/fiimg_2.png');
+                background-size: cover;
+            }
+            .fi3 {
+                background: url('../images/fiimg_3.png');
+                background-size: cover;
+                margin: 0px 0px 100px 0px;
+            }
+            .fi4 {
+                background: url('../images/fiimg_4.png');
+                background-size: cover;
+            }
+        }
+        .poker {
+            .po1 {
+                background: url('../images/poimg_1.png');
+                background-size: cover;
+            }
+            .po2 {
+                background: url('../images/poimg_2.png');
+                background-size: cover;
+            }
+            .po3 {
+                background: url('../images/poimg_3.png');
+                background-size: cover;
+                margin: 0px;
+            }
+        }
+    }
+    //幫助選單
+    .help {
+        width: 915px;
+        height: 250px;
+        margin: 60px auto 0px;
+        div {
+            width: 285px;
+            height: 222px;
+            box-shadow: 0px 0px 15px gray;
+            border-radius: 25px;
+            float: left;
+            margin-right: 30px;
+            text-align: center;
+        }
+        p {
+            font-size: 50px;
+            color: white;
+            margin-top: 140px;
+        }
+        .helpbut1 {
+            background: url('../images/help_1.png') no-repeat center;
+            background-size: cover;
+        }
+        .helpbut2 {
+            background: url('../images/help_2.png') no-repeat center;
+            background-size: cover;
+        }
+        .helpbut3 {
+            background: url('../images/help_3.png') no-repeat center;
+            background-size: cover;
+            margin: 0px;
+        }
     }
 }
+footer {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top,#e6e7e9,#e6e7e9 50%,#f3f3f3 50%);
+    box-shadow: 0px 0px 30px gray;
+    text-align: center;
+    span {
+        line-height: 150px;
+        font-size: 50px;
+        color: #515151;
+        font-weight: bold;
+        padding: 0px 30px;
+        &:first-child {
+            border-right: solid 5px #515151;
+        }
+    }
+}
+//nav按鈕效果
+.navisited1 .lang1,.navisited2 .lang2,.navisited3 .lang3 {
+    background: linear-gradient(to top,#1dd8de,#019abf 74%);
+    color: white;
+}
+.navisited1 .lang1:before,.navisited2 .lang2:before,.navisited3 .lang3:before {
+    right: -4px;
+}
+//下選單按鈕效果
 .visited1 .but1,.visited2 .but2,.visited3 .but3,.visited4 .but4,.visited5 .but5,.visited6 .but6 {
     background: linear-gradient(to top,#1dd8de,#019abf 74%);
     color: white;
@@ -273,6 +834,27 @@ main {
 .visited1 .listbut .but1:before,.visited2 .listbut .but2:before,.visited3 .listbut .but3:before,.visited4 .listbut .but4:before,.visited5 .listbut .but5:before,.visited6 .listbut .but6:before {
     right: -4px;
 }
-.visited1 .list .sport{
+//下選單出現
+.visited1 .list .sport,.visited2 .list .live,.visited3 .list .slot,.visited4 .list .lotto,.visited5 .list .fish,.visited6 .list .poker{
     display: block;
 }
+//下選單長版
+.visited2 .list,.visited3 .list,.visited5 .list {
+    height: 900px;
+}
+.visited2 .list article,.visited3 .list article,.visited5 .list article {
+    transform: translateY(15%);
+}
+//navslide
+.navslide nav,.navslide .blackbg {
+    transform: translateX(0%);
+    display: block;
+}
+//signup出現
+.signupapp .signup,.signupapp .blackbg {
+    display: block;
+} 
+//login出現
+.loginapp .login,.loginapp .blackbg {
+    display: block;
+} 

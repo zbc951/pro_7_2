@@ -48,12 +48,20 @@ html {
   font-family: "微軟正黑體"; }
   html .bg {
     width: 100%;
-    height: 100%;
+    height: 2100px;
     background: url("../images/bg.jpg") no-repeat top center;
     background-size: cover;
     position: absolute;
     top: 0px;
     z-index: -999; }
+  html .blackbg {
+    display: none;
+    width: 100%;
+    height: 2210px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    z-index: 3; }
 
 header {
   width: 100%;
@@ -110,6 +118,374 @@ header {
     background: linear-gradient(to top, #c7c7c7 5%, #f8f8f8 15%, #f8f8f8 82%, #ffffff 90%, #b4b4b4);
     font-size: 48px;
     line-height: 110px; }
+
+.containter {
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 5; }
+  .containter .signup {
+    display: none;
+    width: 900px;
+    height: 1500px;
+    margin: 0px auto; }
+    .containter .signup .uptitle {
+      width: 100%;
+      height: 90px; }
+      .containter .signup .uptitle ul li {
+        width: 430px;
+        height: 95px;
+        position: absolute;
+        text-align: center;
+        font-size: 60px;
+        line-height: 95px;
+        color: #673920; }
+      .containter .signup .uptitle ul .upli1 {
+        background: url("../images/loginbut.png");
+        background-size: cover; }
+      .containter .signup .uptitle ul .upli2 {
+        background: url("../images/whitebut.png");
+        background-size: cover;
+        left: 350px; }
+      .containter .signup .uptitle button {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        position: absolute;
+        right: 0px;
+        background: -webkit-gradient(linear, left bottom, left top, from(#d2d2d2), to(#ffffff));
+        background: -webkit-linear-gradient(bottom, #d2d2d2, #ffffff);
+        background: -o-linear-gradient(bottom, #d2d2d2, #ffffff);
+        background: linear-gradient(to top, #d2d2d2, #ffffff);
+        outline: none;
+        border: none; }
+        .containter .signup .uptitle button::before {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background: url("../images/loginic_1.png") no-repeat center;
+          background-size: cover;
+          top: 20px;
+          left: 20px; }
+    .containter .signup .upcontent {
+      width: 900px;
+      height: 1305px;
+      background: white;
+      border-radius: 0px 50px 50px 50px;
+      padding-top: 100px; }
+      .containter .signup .upcontent input {
+        display: block;
+        width: 700px;
+        height: 100px;
+        background: #dcdcdc;
+        border-radius: 20px;
+        margin: 0px auto 40px;
+        outline: none;
+        border: none;
+        font-size: 50px;
+        padding: 10px 0px 10px 30px;
+        font-weight: bold; }
+      .containter .signup .upcontent .passwordbut {
+        width: 60px;
+        height: 55px;
+        background: url("../images/singupic.png");
+        outline: none;
+        border: none;
+        position: absolute;
+        right: 120px;
+        top: 380px; }
+      .containter .signup .upcontent .cellphonebut {
+        width: 250px;
+        height: 80px;
+        position: absolute;
+        right: 110px;
+        top: 690px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        background: #00b9dc;
+        color: white;
+        font-size: 40px; }
+        .containter .signup .upcontent .cellphonebut:active {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+      .containter .signup .upcontent .check {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 0px 20px 0px 100px; }
+        .containter .signup .upcontent .check:active {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+      .containter .signup .upcontent p {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 80px; }
+        .containter .signup .upcontent p a {
+          margin-left: 10px;
+          color: #00b7d8; }
+      .containter .signup .upcontent .ok {
+        display: block;
+        width: 700px;
+        height: 120px;
+        margin: 0px auto;
+        font-size: 60px;
+        color: white;
+        background: -webkit-gradient(linear, left top, right top, from(#1dd8de), to(#0098be));
+        background: -webkit-linear-gradient(left, #1dd8de, #0098be);
+        background: -o-linear-gradient(left, #1dd8de, #0098be);
+        background: linear-gradient(to right, #1dd8de, #0098be);
+        border-radius: 20px;
+        border: none;
+        outline: none; }
+  .containter .login {
+    display: none;
+    width: 900px;
+    height: 900px;
+    margin-top: 250px; }
+    .containter .login .intitle {
+      width: 100%;
+      height: 90px; }
+      .containter .login .intitle ul li {
+        width: 430px;
+        height: 95px;
+        position: absolute;
+        text-align: center;
+        font-size: 60px;
+        line-height: 95px;
+        color: #673920; }
+      .containter .login .intitle ul .inli1 {
+        background: url("../images/whitebut.png");
+        background-size: cover;
+        z-index: 2; }
+      .containter .login .intitle ul .inli2 {
+        background: url("../images/signupbut.png");
+        background-size: cover;
+        left: 350px;
+        color: white; }
+      .containter .login .intitle button {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        position: absolute;
+        right: 0px;
+        background: -webkit-gradient(linear, left bottom, left top, from(#d2d2d2), to(#ffffff));
+        background: -webkit-linear-gradient(bottom, #d2d2d2, #ffffff);
+        background: -o-linear-gradient(bottom, #d2d2d2, #ffffff);
+        background: linear-gradient(to top, #d2d2d2, #ffffff);
+        outline: none;
+        border: none; }
+        .containter .login .intitle button::before {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background: url("../images/loginic_1.png") no-repeat center;
+          background-size: cover;
+          top: 20px;
+          left: 20px; }
+    .containter .login .incontent {
+      width: 900px;
+      height: 610px;
+      background: white;
+      position: relative;
+      z-index: 5;
+      border-radius: 0px 50px 50px 50px;
+      padding-top: 100px; }
+      .containter .login .incontent input {
+        display: block;
+        width: 600px;
+        height: 90px;
+        background: #dcdcdc;
+        border-radius: 20px;
+        margin: 0px auto 40px;
+        outline: none;
+        border: none;
+        font-size: 50px;
+        padding: 10px 0px 10px 150px;
+        font-weight: bold; }
+      .containter .login .incontent .accountbg {
+        width: 110px;
+        height: 110px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#1dd8de), to(#0098be));
+        background: -webkit-linear-gradient(top, #1dd8de, #0098be);
+        background: -o-linear-gradient(top, #1dd8de, #0098be);
+        background: linear-gradient(to bottom, #1dd8de, #0098be);
+        border-radius: 20px 0px 0px 20px;
+        position: absolute;
+        top: 100px;
+        left: 75px; }
+        .containter .login .incontent .accountbg::before {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 56px;
+          background: url("../images/loginic_2.png");
+          top: 27px;
+          left: 30px; }
+      .containter .login .incontent .passwordbg {
+        width: 110px;
+        height: 110px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#1dd8de), to(#0098be));
+        background: -webkit-linear-gradient(top, #1dd8de, #0098be);
+        background: -o-linear-gradient(top, #1dd8de, #0098be);
+        background: linear-gradient(to bottom, #1dd8de, #0098be);
+        border-radius: 20px 0px 0px 20px;
+        position: absolute;
+        top: 250px;
+        left: 75px; }
+        .containter .login .incontent .passwordbg::before {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 63px;
+          background: url("../images/loginic_3.png");
+          top: 23.5px;
+          left: 30px; }
+      .containter .login .incontent .remember {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 0px 20px 0px 75px; }
+        .containter .login .incontent .remember:active {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+      .containter .login .incontent p {
+        font-size: 36px;
+        line-height: 50px;
+        float: left;
+        margin-bottom: 80px; }
+      .containter .login .incontent a {
+        float: right;
+        line-height: 50px;
+        font-size: 36px;
+        color: black;
+        margin-right: 75px; }
+      .containter .login .incontent .ok {
+        display: block;
+        width: 700px;
+        height: 120px;
+        margin: 0px auto;
+        font-size: 60px;
+        color: white;
+        background: -webkit-gradient(linear, left top, right top, from(#1dd8de), to(#0098be));
+        background: -webkit-linear-gradient(left, #1dd8de, #0098be);
+        background: -o-linear-gradient(left, #1dd8de, #0098be);
+        background: linear-gradient(to right, #1dd8de, #0098be);
+        border-radius: 20px;
+        border: none;
+        outline: none; }
+
+nav {
+  width: 800px;
+  height: 2210px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(97%, #ffffff), to(#b4b4b4));
+  background: -webkit-linear-gradient(left, #ffffff 97%, #b4b4b4);
+  background: -o-linear-gradient(left, #ffffff 97%, #b4b4b4);
+  background: linear-gradient(to right, #ffffff 97%, #b4b4b4);
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%); }
+  nav .navic {
+    width: 65px;
+    height: 65px;
+    background: url("../images/navic.png");
+    outline: none;
+    border: none;
+    float: right;
+    margin: 50px 100px 0px 0px; }
+    nav .navic:active {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+  nav .lang {
+    width: 450px;
+    height: 200px;
+    margin: 100px 0px 0px 80px; }
+    nav .lang p {
+      font-size: 60px; }
+    nav .lang ul {
+      width: 450px;
+      height: 100px;
+      background: -webkit-gradient(linear, left bottom, left top, from(#c8c8c8), color-stop(74%, #f8f8f8));
+      background: -webkit-linear-gradient(bottom, #c8c8c8, #f8f8f8 74%);
+      background: -o-linear-gradient(bottom, #c8c8c8, #f8f8f8 74%);
+      background: linear-gradient(to top, #c8c8c8, #f8f8f8 74%);
+      border-radius: 20px;
+      margin-top: 30px;
+      border: solid 3px #dcdcdc;
+      overflow: hidden; }
+      nav .lang ul li {
+        float: left;
+        font-size: 40px;
+        text-align: center;
+        width: 150px;
+        height: 100px;
+        line-height: 100px;
+        position: relative; }
+        nav .lang ul li::before {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 80px;
+          background: -webkit-gradient(linear, left bottom, left top, color-stop(9%, #c8c8c8), color-stop(50%, #bbbbbb), color-stop(92%, #f8f8f8));
+          background: -webkit-linear-gradient(bottom, #c8c8c8 9%, #bbbbbb 50%, #f8f8f8 92%);
+          background: -o-linear-gradient(bottom, #c8c8c8 9%, #bbbbbb 50%, #f8f8f8 92%);
+          background: linear-gradient(to top, #c8c8c8 9%, #bbbbbb 50%, #f8f8f8 92%);
+          right: 0px;
+          top: 5px; }
+        nav .lang ul li:last-child:before {
+          display: none; }
+  nav .navlist {
+    width: 100%;
+    height: 1450px;
+    margin-top: 50px;
+    overflow: hidden; }
+    nav .navlist li {
+      width: 87%;
+      height: 200px;
+      padding-left: 80px;
+      font-size: 60px;
+      line-height: 200px;
+      border-style: solid;
+      border-color: #eaeaea;
+      border-width: 2px 0px 2px 0px; }
+      nav .navlist li:active {
+        background: rgba(0, 0, 0, 0.3); }
+    nav .navlist .navli1 {
+      border-top-width: 4px; }
+    nav .navlist .navli7 {
+      border-bottom-width: 4px; }
+  nav .logout {
+    width: 240px;
+    height: 100px;
+    margin: 50px 0px 0px 80px;
+    outline: none;
+    border: solid 2px #2ed7e2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#32dde3), color-stop(74%, #0da1de));
+    background: -webkit-linear-gradient(top, #32dde3, #0da1de 74%);
+    background: -o-linear-gradient(top, #32dde3, #0da1de 74%);
+    background: linear-gradient(to bottom, #32dde3, #0da1de 74%);
+    border-radius: 20px;
+    font-size: 50px;
+    color: white; }
+    nav .logout:active {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
 
 main {
   width: 100%;
@@ -184,9 +560,11 @@ main {
   main .list {
     width: 100%;
     height: 545px;
-    background: white; }
+    background: white;
+    -webkit-box-shadow: 0px 5px 15px gray;
+    box-shadow: 0px 5px 15px gray; }
     main .list .listbut {
-      width: 900px;
+      width: 915px;
       height: 100px;
       background: -webkit-gradient(linear, left bottom, left top, from(#c8c8c8), color-stop(74%, #f8f8f8));
       background: -webkit-linear-gradient(bottom, #c8c8c8, #f8f8f8 74%);
@@ -200,7 +578,7 @@ main {
       overflow: hidden;
       border: solid 3px #dbdbdb; }
       main .list .listbut li {
-        width: 150px;
+        width: 152.5px;
         height: 100px;
         float: left;
         text-align: center;
@@ -220,28 +598,166 @@ main {
           top: 5px; }
         main .list .listbut li:last-child:before {
           display: none; }
-    main .list .sport {
+    main .list article {
       display: none;
-      width: 900px;
+      width: 915px;
       height: 300px;
       margin: 0px auto;
       -webkit-transform: translateY(30%);
       -ms-transform: translateY(30%);
       transform: translateY(30%); }
-      main .list .sport div {
-        width: 270px;
-        height: 220px;
-        -webkit-box-shadow: 0px 0px 15px gray;
-        box-shadow: 0px 0px 15px gray;
-        float: left;
+    main .list div {
+      width: 285px;
+      height: 230px;
+      -webkit-box-shadow: 0px 0px 15px gray;
+      box-shadow: 0px 0px 15px gray;
+      float: left;
+      margin-right: 30px;
+      text-align: center; }
+    main .list p {
+      font-size: 40px;
+      margin-top: 240px; }
+    main .list .sport .sp1 {
+      background: url("../images/spimg_1.png") no-repeat top center;
+      background-size: cover; }
+    main .list .sport .sp2 {
+      background: url("../images/spimg_2.png");
+      background-size: cover; }
+    main .list .live {
+      height: 600px; }
+      main .list .live .li1 {
+        background: url("../images/liimg_1.png");
+        background-size: cover; }
+      main .list .live .li2 {
+        background: url("../images/liimg_2.png");
+        background-size: cover; }
+      main .list .live .li3 {
+        background: url("../images/liimg_3.png");
         background-size: cover;
-        margin-right: 50px; }
-      main .list .sport .sp1 {
-        background: url("../images/spimg_1.png") no-repeat top center;
+        margin: 0px 0px 100px 0px; }
+      main .list .live .li4 {
+        background: url("../images/liimg_4.png");
         background-size: cover; }
-      main .list .sport .sp2 {
-        background: url("../images/spimg_2.png");
+      main .list .live .li5 {
+        background: url("../images/liimg_5.png");
         background-size: cover; }
+      main .list .live .li6 {
+        background: url("../images/liimg_6.png");
+        background-size: cover;
+        margin: 0px; }
+    main .list .slot {
+      height: 600px; }
+      main .list .slot .sl1 {
+        background: url("../images/slimg_1.png");
+        background-size: cover; }
+      main .list .slot .sl2 {
+        background: url("../images/slimg_2.png");
+        background-size: cover; }
+      main .list .slot .sl3 {
+        background: url("../images/slimg_3.png");
+        background-size: cover;
+        margin: 0px 0px 100px 0px; }
+      main .list .slot .sl4 {
+        background: url("../images/slimg_4.png");
+        background-size: cover; }
+      main .list .slot .sl5 {
+        background: url("../images/slimg_5.png");
+        background-size: cover; }
+      main .list .slot .sl6 {
+        background: url("../images/slimg_6.png");
+        background-size: cover;
+        margin: 0px; }
+    main .list .lotto .lo1 {
+      background: url("../images/loimg_1.png");
+      background-size: cover; }
+    main .list .lotto .lo2 {
+      background: url("../images/loimg_2.png");
+      background-size: cover; }
+    main .list .lotto .lo3 {
+      background: url("../images/loimg_3.png");
+      background-size: cover;
+      margin: 0px; }
+    main .list .fish {
+      height: 600px; }
+      main .list .fish .fi1 {
+        background: url("../images/fiimg_1.png");
+        background-size: cover; }
+      main .list .fish .fi2 {
+        background: url("../images/fiimg_2.png");
+        background-size: cover; }
+      main .list .fish .fi3 {
+        background: url("../images/fiimg_3.png");
+        background-size: cover;
+        margin: 0px 0px 100px 0px; }
+      main .list .fish .fi4 {
+        background: url("../images/fiimg_4.png");
+        background-size: cover; }
+    main .list .poker .po1 {
+      background: url("../images/poimg_1.png");
+      background-size: cover; }
+    main .list .poker .po2 {
+      background: url("../images/poimg_2.png");
+      background-size: cover; }
+    main .list .poker .po3 {
+      background: url("../images/poimg_3.png");
+      background-size: cover;
+      margin: 0px; }
+  main .help {
+    width: 915px;
+    height: 250px;
+    margin: 60px auto 0px; }
+    main .help div {
+      width: 285px;
+      height: 222px;
+      -webkit-box-shadow: 0px 0px 15px gray;
+      box-shadow: 0px 0px 15px gray;
+      border-radius: 25px;
+      float: left;
+      margin-right: 30px;
+      text-align: center; }
+    main .help p {
+      font-size: 50px;
+      color: white;
+      margin-top: 140px; }
+    main .help .helpbut1 {
+      background: url("../images/help_1.png") no-repeat center;
+      background-size: cover; }
+    main .help .helpbut2 {
+      background: url("../images/help_2.png") no-repeat center;
+      background-size: cover; }
+    main .help .helpbut3 {
+      background: url("../images/help_3.png") no-repeat center;
+      background-size: cover;
+      margin: 0px; }
+
+footer {
+  width: 100%;
+  height: 150px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e6e7e9), color-stop(50%, #e6e7e9), color-stop(50%, #f3f3f3));
+  background: -webkit-linear-gradient(bottom, #e6e7e9, #e6e7e9 50%, #f3f3f3 50%);
+  background: -o-linear-gradient(bottom, #e6e7e9, #e6e7e9 50%, #f3f3f3 50%);
+  background: linear-gradient(to top, #e6e7e9, #e6e7e9 50%, #f3f3f3 50%);
+  -webkit-box-shadow: 0px 0px 30px gray;
+  box-shadow: 0px 0px 30px gray;
+  text-align: center; }
+  footer span {
+    line-height: 150px;
+    font-size: 50px;
+    color: #515151;
+    font-weight: bold;
+    padding: 0px 30px; }
+    footer span:first-child {
+      border-right: solid 5px #515151; }
+
+.navisited1 .lang1, .navisited2 .lang2, .navisited3 .lang3 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1dd8de), color-stop(74%, #019abf));
+  background: -webkit-linear-gradient(bottom, #1dd8de, #019abf 74%);
+  background: -o-linear-gradient(bottom, #1dd8de, #019abf 74%);
+  background: linear-gradient(to top, #1dd8de, #019abf 74%);
+  color: white; }
+
+.navisited1 .lang1:before, .navisited2 .lang2:before, .navisited3 .lang3:before {
+  right: -4px; }
 
 .visited1 .but1, .visited2 .but2, .visited3 .but3, .visited4 .but4, .visited5 .but5, .visited6 .but6 {
   background: -webkit-gradient(linear, left bottom, left top, from(#1dd8de), color-stop(74%, #019abf));
@@ -253,5 +769,25 @@ main {
 .visited1 .listbut .but1:before, .visited2 .listbut .but2:before, .visited3 .listbut .but3:before, .visited4 .listbut .but4:before, .visited5 .listbut .but5:before, .visited6 .listbut .but6:before {
   right: -4px; }
 
-.visited1 .list .sport {
+.visited1 .list .sport, .visited2 .list .live, .visited3 .list .slot, .visited4 .list .lotto, .visited5 .list .fish, .visited6 .list .poker {
+  display: block; }
+
+.visited2 .list, .visited3 .list, .visited5 .list {
+  height: 900px; }
+
+.visited2 .list article, .visited3 .list article, .visited5 .list article {
+  -webkit-transform: translateY(15%);
+  -ms-transform: translateY(15%);
+  transform: translateY(15%); }
+
+.navslide nav, .navslide .blackbg {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  display: block; }
+
+.signupapp .signup, .signupapp .blackbg {
+  display: block; }
+
+.loginapp .login, .loginapp .blackbg {
   display: block; }
