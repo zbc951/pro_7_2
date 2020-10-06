@@ -103,3 +103,6 @@ $(function(){
         $('body').attr('class','loginapp')
     })
 })
+
+//safari active問題
+document.addEventListener("touchstart", function() {},false);

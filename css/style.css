@@ -95,6 +95,10 @@ header {
         outline: none;
         border-radius: 20px;
         font-size: 48px; }
+        @supports (-webkit-touch-callout: none) {
+          header article div button {
+            /* CSS specific to iOS devices */
+            font-size: 28px; } }
         header article div button:first-child {
           margin-right: 20px;
           border: solid 5px #ffa800;
@@ -210,6 +214,10 @@ header {
         background: #00b9dc;
         color: white;
         font-size: 40px; }
+        @supports (-webkit-touch-callout: none) {
+          .containter .signup .upcontent .cellphonebut {
+            /* CSS specific to iOS devices */
+            font-size: 30px; } }
         .containter .signup .upcontent .cellphonebut:active {
           -webkit-transform: scale(1.1);
           -ms-transform: scale(1.1);
@@ -510,7 +518,7 @@ main {
       height: 60px;
       border-radius: 5px;
       z-index: 3; }
-    main .single-item .slick-next:hover, main .single-item .slick-prev:active {
+    main .single-item .slick-next:active, main .single-item .slick-prev:active {
       background: rgba(0, 0, 0, 0.4); }
     main .single-item .slick-next {
       right: 40px; }
