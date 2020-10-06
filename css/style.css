@@ -114,6 +114,10 @@ header {
           background: -webkit-linear-gradient(bottom, #ff7a29, #fc5f00 50%, #ff7a29 50%), -webkit-radial-gradient(ellipse, #ff9f44, transparent);
           background: -o-linear-gradient(bottom, #ff7a29, #fc5f00 50%, #ff7a29 50%), -o-radial-gradient(ellipse, #ff9f44, transparent);
           background: linear-gradient(to top, #ff7a29, #fc5f00 50%, #ff7a29 50%), radial-gradient(ellipse, #ff9f44, transparent); }
+        header article div button:active {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
   header marquee {
     width: 100%;
     height: 120px;
@@ -195,14 +199,14 @@ header {
         padding: 10px 0px 10px 30px;
         font-weight: bold; }
       .containter .signup .upcontent .passwordbut {
-        width: 60px;
-        height: 55px;
-        background: url("../images/singupic.png");
+        width: 100px;
+        height: 100px;
+        background: url("../images/singupic.png") no-repeat center;
         outline: none;
         border: none;
         position: absolute;
-        right: 120px;
-        top: 380px; }
+        right: 100px;
+        top: 360px; }
       .containter .signup .upcontent .cellphonebut {
         width: 250px;
         height: 80px;
